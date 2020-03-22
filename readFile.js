@@ -1,6 +1,14 @@
+// variable **const is variable can't change value
+//          **let is variable can change value
+
 const fs = require('fs');
 
-fs.readFile('E:/Code/data.txt','utf-8', (error, data) => {
+const part = "E:/Code/";
+const namefile = "data";
+const lastnamefile = ".txt";
+
+
+fs.readFile(part + namefile + lastnamefile,'utf-8', (error, data) => {
 // fs.readFile('data.txt', (error, data) => {
     if (error){
         console.log('error');
